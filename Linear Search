@@ -1,0 +1,14 @@
+def linear_search(arr, tgt):
+    found = False
+    for i in range(len(arr)):
+        if arr[i] == tgt:
+            print("Element found at position:", i)
+            found = True
+            break
+    if not found:
+        print("Element not found")
+
+
+arr = [47,85,4,5,6,8,2]
+tgt = int(input("Enter element to search: "))
+linear_search(arr, tgt)
