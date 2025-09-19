@@ -3,10 +3,9 @@ def binary_search(arr, target):
     ub = len(arr) - 1
     
     while lb <= ub:
-        mid = (lb + ub) // 2   # integer division
-        
+        mid = (lb + ub) // 2   
         if arr[mid] == target:
-            return mid   # return index if found
+            return mid  
         elif arr[mid] < target:
             lb = mid + 1
         else:
